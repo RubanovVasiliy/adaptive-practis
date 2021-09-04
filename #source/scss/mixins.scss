@@ -1,0 +1,43 @@
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0;
+}
+@mixin tr($x, $y, $z) {
+    transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -webkit-transform: translate3d($x, $y, $z);
+}
+@mixin scale($num) {
+    transform: scale($num);
+    -o-transform: scale($num);
+    -ms-transform: scale($num);
+    -moz-transform: scale($num);
+    -webkit-transform: scale($num);
+}
+@mixin rotate($num) {
+    transform: rotate($num);
+    -o-transform: rotate($num);
+    -ms-transform: rotate($num);
+    -moz-transform: rotate($num);
+    -webkit-transform: rotate($num);
+}
+@mixin skew($num) {
+    transform: skewX($num);
+    -o-transform: skewX($num);
+    -ms-transform: skewX($num);
+    -moz-transform: skewX($num);
+    -webkit-transform: skewX($num);
+}
+@mixin anim($time, $delay) {
+    transition: all $time ease $delay;
+    -o-transition: all $time ease $delay;
+    -ms-transition: all $time ease $delay;
+    -moz-transition: all $time ease $delay;
+    -webkit-transition: all $time ease $delay;
+}
